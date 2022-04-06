@@ -1,0 +1,157 @@
+@font-face {
+    font-family: Meslo Reg;
+    src: url(./fonts/MesloLGS\ NF\ Regular.ttf);
+}
+body {
+
+    margin: 0;
+    font-family: Meslo Reg;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr);
+    grid-template-rows: 1fr repeat(3, 2fr);
+    height: 100vh;
+}
+
+
+
+
+.main-body {
+    background-color: rgb(214, 214, 214);
+    grid-row: 2/5;
+    grid-column: 2/5;
+}
+
+/* Dashboard & Co */
+.dashboard {
+    background-color: rgb(78, 78, 255);
+    grid-row: 1/5;
+    color: white;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.dash-item {
+    margin-left: 20px;
+}
+
+.dash-item:hover {
+    color: rgb(36, 49, 121);
+    
+}
+
+.home {
+    margin-top: 10%;
+}
+
+.settings {
+    margin-top: 10%;
+}
+
+/* Nav Bar! */
+.nav {
+    background-color: rgb(255, 255, 255);
+    grid-column: 2/5;
+}
+    /* top nav */
+    .top-nav {
+        display: flex;
+        gap: 10px;
+        margin-top: 1%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .bell {
+        margin-left: auto;
+    }
+
+    .mglass {
+        height: 30px;
+        margin-left: 3%;
+    }
+
+    .search {
+        width: 50%;
+        border-radius: 30px;
+        height: 30px;
+        background-color: rgb(230, 227, 227);
+        /* border-style: solid; */
+        border: none;
+    }
+
+    .user-name {
+        margin-right: 3%;
+    }
+    /* bot nav */
+    .bot-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .new {
+        margin-left: auto;
+    }
+    .bot-man-img {
+        margin-left: 10px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .greeting-p {
+        margin-bottom: 5px;
+    }
+
+    .greeting-name {
+        margin-top: 5px;
+    }
+    /* bot-nav btn */
+    button {
+        width: 65px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: rgb(42, 162, 241);
+        color: white;
+        border: none;
+    }
+    
+    .share {
+        margin-right: 3%;
+    }
+    .upload {
+        margin: 10px
+    }
+
+
+/* Main body */
+.project-title {
+    margin-left: 18px;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(3, 200px);
+    gap: 18px;
+    margin-left: 18px;
+}
+
+.project-item {
+    background-color: white;
+    padding: 15px;
+    border-left: 9px solid orange;
+    border-radius: 10px;
+}
+
+.project-sidebar {
+    display: grid;
+    grid-template-columns: 75% 20%;
+}
+
+.side-item {
+    background-color: white;
+    margin-right: 10px;  
+    border-radius: 10px;
+    padding: 10px;
+}
